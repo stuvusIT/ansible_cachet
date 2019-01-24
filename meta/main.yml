@@ -1,0 +1,22 @@
+galaxy_info:
+  author: Janne Heß
+  description: Install and configure a Cachet instance
+  company: stuvus (https://stuvus.uni-stuttgart.de)
+
+  license: CC-BY-SA
+
+  min_ansible_version: 2.4
+
+  platforms:
+  - name: Debian
+    versions:
+    - stretch
+
+  galaxy_tags:
+    - cachet
+    - cachethq
+    - status
+    - statuspage
+    - monitoring
+
+dependencies: []

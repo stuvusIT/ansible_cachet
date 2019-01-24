@@ -1,0 +1,36 @@
+---
+cachet_home: /srv/http/cachet
+cachet_version: v2.3.15
+
+cachet_worker_install: true
+cachet_worker_delay: 2
+cachet_worker_sleep: 1
+cachet_worker_tries: 3
+
+cachet_mysql_host: localhost
+cachet_mysql_name: cachet
+cachet_mysql_user: cachet
+cachet_mysql_pass: cachet
+cachet_mysql_port: 3306
+cachet_mysql_prefix: "null"
+cachet_mysql_login_user: root
+cachet_cache_driver: apc
+cachet_session_driver: apc
+cachet_queue_driver: database
+cachet_emoji: true
+cachet_beacon: false
+
+cachet_mail_driver: smtp
+cachet_mail_host: mailtrap.io
+cachet_mail_port: 2525
+cachet_mail_username: "null"
+cachet_mail_password: "null"
+cachet_mail_address: "null"
+cachet_mail_name: "null"
+cachet_mail_encryption: tls
+
+cachet_redis_host: "null"
+cachet_redis_port: "null"
+cachet_redis_database: "null"
+
+cachet_github_token: "null"

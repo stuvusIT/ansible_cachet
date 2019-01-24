@@ -1,0 +1,13 @@
+# {{ ansible_managed }}
+[Unit]
+Description=Cachet queue runner
+
+[Service]
+ExecStart=/usr/bin/php artisan queue:work --daemon --delay={{ cachet_worker_delay }} --sleep={{ cachet_worker_sleep }} --tries={{ cachet_worker_tries }}
+WorkingDirectory={{ cachet_home }}
+User=www-data
+ProtectSystem=full
+ReadWriteDirectories={{ cachet_home }}
+
+[Install]
+WantedBy=multi-user.service
